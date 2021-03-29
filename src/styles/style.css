@@ -1,1 +1,69 @@
 /** CSS STYLE **/
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('../../assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../../assets/fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Neucha';
+  src: url('../../assets/fonts/Neucha-Regular.ttf');
+}
+
+body {
+  color: #2A2626;
+  font: 16px/1.6em 'Open Sans Regular', sans-serif;
+
+  background-color: #FFFFFF;
+}
+
+section {
+  background-image: url(../../assets/images/background.png);
+}
+
+.section-grey {
+  background: #F5F4F0;
+}
+
+.section-brown {
+  color: #FFFFFF;
+
+  background: #B09A81;
+}
+
+.content {
+  width: 1110px;
+
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.h-orange {
+  color: #FE8A02;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Neucha', sans-serif;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}

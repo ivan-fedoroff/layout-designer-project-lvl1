@@ -1,7 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ivan-fedoroff/layout-designer-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ivan-fedoroff/layout-designer-project-lvl1/actions)
 
-# HTML/CSS Boilerplate
 
 ## Setup
 
@@ -14,3 +13,4 @@ $ make install
 ```sh
 make lint
 ```
+quizzical-stomach.surge.sh

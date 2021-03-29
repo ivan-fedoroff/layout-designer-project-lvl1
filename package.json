@@ -1,10 +1,10 @@
 {
-  "name": "html5-css-boilerplate",
-  "version": "0.1.0",
-  "description": "HTML5/CSS Boilerplate with HTMLHint and StyleLint",
+  "name": "layout-designer-project-lvl1",
+  "version": "0.1.1",
+  "description": "Проект 'Когнитивные искажения' Vt. Используется шаблон html5-css-boilerplate by Nikita Mikhaylov",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hexlet-boilerplates/html-boilerplate.git"
+    "url": "https://github.com/ivan-fedoroff/layout-designer-project-lvl1.git"
   },
   "main": "",
   "dependencies": {},
@@ -16,6 +16,6 @@
     "stylelint-order": "^4.1.0",
     "surge": "^0.21.7"
   },
-  "author": "Nikita Mikhaylov",
+  "author": "Fedorov Ivan",
   "license": "ISC"
 }
