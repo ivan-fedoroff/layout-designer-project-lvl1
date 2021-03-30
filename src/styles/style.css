@@ -90,6 +90,12 @@ h3 {
   font-size: 34px;
 }
 
+h5 {
+  font-size: 14px;
+  font-family: 'Open Sans Bold', sans-serif;
+  text-transform: uppercase;
+}
+
 [main-picture] {
   position: absolute;
   top: 55px;
@@ -99,13 +105,15 @@ h3 {
 }
 
 .articles {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+header .articles {
   height: 170px;
 
   margin-top: 185px;
   margin-bottom: 30px;
-
-  column-count: 2;
-  column-gap: 30px;
 }
 
 .articles * {
@@ -198,4 +206,64 @@ button a {
 .card p {
   margin-top: 12px;
   margin-bottom: 0;
+}
+
+.card:hover {
+  color: #fff;
+
+  background: #fe8a02;
+}
+
+.card:hover .number,
+.card:hover h3 {
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+
+  font-family: 'Neucha', sans-serif;
+
+  column-gap: 30px;
+}
+
+.images {
+  vertical-align: middle;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.title-cd-first {
+  margin-top: 0;
+
+  color: #908d8b;
+  font-size: 24px;
+}
+
+.title-cd-last {
+  font-size: 34px;
+}
+
+.how-works {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+
+  color: #fff;
+
+  background: #b09a81;
+}
+
+.section-brown .flex {
+  flex-direction: row-reverse;
+}
+
+.section-brown .title-cd-first {
+  color: #d7ccc0;
+}
+
+.section-brown .how-works {
+  color: #b09a81;
+
+  background: #fff;
 }
