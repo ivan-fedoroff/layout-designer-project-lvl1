@@ -131,7 +131,7 @@ button:hover {
   background: #ea7600;
 }
 
-a {
+button a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -152,7 +152,50 @@ a {
 }
 
 #navigation {
-  height: 300px;
+  padding-top: 100px;
 
   background: #42413c;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav > * {
+  width: 350px;
+}
+
+.h-nav {
+  color: #fff;
+  font-size: 52px;
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 24px;
+
+  color: #2a2626;
+  text-decoration: none;
+
+  background: #f5f4f0;
+}
+
+.second-row {
+  margin-top: 20px;
+}
+
+.number {
+  margin-bottom: 40px;
+
+  color: #42413c;
+
+  font-size: 64px;
+  line-height: 1;
+}
+
+.card p {
+  margin-top: 12px;
+  margin-bottom: 0;
 }
