@@ -67,12 +67,14 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h5 {
   margin: 0 auto;
   padding: 0 auto;
+}
 
+h1,
+h2,
+h3 {
   font-weight: 400;
   font-family: 'Neucha', sans-serif;
   line-height: 1.2em;
@@ -83,16 +85,18 @@ h1 {
 }
 
 h2 {
+  color: #fe8a02;
   font-size: 60px;
 }
 
 h3 {
+  color: #fe8a02;
   font-size: 34px;
 }
 
 h5 {
+  font-weight: bold;
   font-size: 14px;
-  font-family: 'Open Sans Bold', sans-serif;
   text-transform: uppercase;
 }
 
@@ -110,16 +114,8 @@ h5 {
 }
 
 header .articles {
-  height: 170px;
-
   margin-top: 185px;
   margin-bottom: 30px;
-}
-
-.articles * {
-  margin-top: 0;
-
-  break-inside: avoid;
 }
 
 button {
@@ -153,6 +149,8 @@ button a {
 
 [before-video] {
   margin-bottom: 30px;
+
+  color: #2a2626;
 }
 
 .video {
@@ -219,6 +217,16 @@ button a {
   color: #fff;
 }
 
+.articles * {
+  margin-top: 0;
+
+  break-inside: avoid;
+}
+
+.articles *:first-of-type {
+  break-after: column;
+}
+
 .flex {
   display: flex;
 
@@ -241,6 +249,10 @@ button a {
   line-height: 1.2;
 }
 
+.h-grey {
+  color: #2a2626;
+}
+
 .title-cd-last {
   margin-top: 30px;
 
@@ -260,10 +272,17 @@ button a {
 
 .section-brown .flex {
   flex-direction: row-reverse;
+  justify-content: space-between;
+
+  column-gap: 0;
 }
 
 .section-brown .title-cd-first {
   color: #d7ccc0;
+}
+
+.h-brown {
+  color: #fff;
 }
 
 .section-brown .how-works {
