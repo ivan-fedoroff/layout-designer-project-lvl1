@@ -1,20 +1,23 @@
 /** CSS STYLE **/
 @font-face {
   font-family: 'Open Sans Regular';
-  src: url('../../assets/fonts/OpenSans-Regular.ttf');
+  src: url('../assets/fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Open Sans Bold';
-  src: url('../../assets/fonts/OpenSans-Bold.ttf');
+  src: url('../assets/fonts/OpenSans-Bold.ttf');
 }
 
 @font-face {
   font-family: 'Neucha';
-  src: url('../../assets/fonts/Neucha-Regular.ttf');
+  src: url('../assets/fonts/Neucha-Regular.ttf');
 }
 
 body {
+  margin: 0;
+  overflow-x: hidden;
+
   color: #2a2626;
   font: 16px/1.6em 'Open Sans Regular', sans-serif;
 
@@ -118,7 +121,21 @@ header .articles {
   margin-bottom: 30px;
 }
 
+.articles * {
+  margin-top: 0;
+
+  break-inside: avoid;
+}
+
 button {
+  background: #fe8a02;
+}
+
+button:hover {
+  background: #ea7600;
+}
+
+[detail] {
   position: relative;
   left: 570px;
 
@@ -127,15 +144,9 @@ button {
   border: none;
 
   font: 16px/1.6em 'Open Sans Bold', sans-serif;
-
-  background: #fe8a02;
 }
 
-button:hover {
-  background: #ea7600;
-}
-
-button a {
+[detail] a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -178,6 +189,10 @@ button a {
   font-size: 52px;
 }
 
+.articles *:first-of-type {
+  break-after: column;
+}
+
 .card {
   box-sizing: border-box;
   padding: 24px;
@@ -201,7 +216,7 @@ button a {
   line-height: 1;
 }
 
-.card p {
+.card-p {
   margin-top: 12px;
   margin-bottom: 0;
 }
@@ -215,16 +230,6 @@ button a {
 .card:hover .number,
 .card:hover h3 {
   color: #fff;
-}
-
-.articles * {
-  margin-top: 0;
-
-  break-inside: avoid;
-}
-
-.articles *:first-of-type {
-  break-after: column;
 }
 
 .flex {
@@ -289,4 +294,97 @@ button a {
   color: #b09a81;
 
   background: #fff;
+}
+
+footer {
+  color: #000;
+  font-size: 14px;
+
+  text-align: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 75px;
+  padding: 0 55px;
+
+  color: #fff;
+  text-align: left;
+
+  background: #42413c;
+}
+
+[form-footer-title] {
+  font: 34px/1.2 'Neucha', sans-serif;
+}
+
+label {
+  box-sizing: border-box;
+  margin: 15px;
+
+  font-size: 18px;
+}
+
+[input-button] {
+  display: flex;
+
+  margin-top: 9px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 413px;
+  height: 50px;
+  margin-right: 0;
+  padding: 15px;
+  border: none;
+
+  background: #fff;
+}
+
+input::placeholder {
+  color: #757575;
+  font-size: 13px;
+
+  opacity: 20%;
+}
+
+[arrow] {
+  position: relative;
+
+  width: 70px;
+  height: 50px;
+  margin-left: 0;
+  border: none;
+}
+
+[arrow]::before {
+  position: absolute;
+  top: 13px;
+  left: 23px;
+
+  width: 24px;
+  height: 24px;
+
+  background-image: url('../assets/images/send.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: '';
+}
+
+[agreement] {
+  margin: 0;
+
+  font-size: 12px;
+}
+
+[agreement] > a {
+  color: #fff;
+}
+
+.footer-a {
+  color: #1085c5;
 }

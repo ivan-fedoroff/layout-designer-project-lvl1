@@ -19,7 +19,7 @@
                     <p>Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности, багам и бесконечному разочарованию.</p>
                     <p>Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.</p>
                 </article>
-                <button><a href="#navigation">подробнее</a></button>
+                <button detail><a href="#navigation">подробнее</a></button>
             </div>
         </section>
     </header>
@@ -39,27 +39,27 @@
                 <a href="#ikea-effect" class="card">
                     <h2 class="number">1</h2>
                     <h3>Эффект ИКЕА</h3>
-                    <p>Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
+                    <p class="card-p">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
                 </a>
                 <a href="#premature-optimization" class="card">
                     <h2 class="number">2</h2>
                     <h3>Преждевременная оптимизация</h3>
-                    <p>Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
+                    <p class="card-p">Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
                 </a>
                 <a href="#distortion-of-novelty" class="card second-row">
                     <h2 class="number">3</h2>
                     <h3>Искажение новизны</h3>
-                    <p>Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.</p>
+                    <p class="card-p">Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.</p>
                 </a>
                 <a href="#hyperbolic-depreciation" class="card second-row">
                     <h2 class="number">4</h2>
                     <h3>Гиперболическое обесценивание</h3>
-                    <p>Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</p>
+                    <p class="card-p">Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</p>
                 </a>
                 <a href="#errors-in-planning" class="card second-row">
                     <h2 class="number">5</h2>
                     <h3>Ошибка планирования</h3>
-                    <p>Неправильно рассчитывать время необходимое для завершения задачи.</p>
+                    <p class="card-p">Неправильно рассчитывать время необходимое для завершения задачи.</p>
                 </a>
             </div>
         </section>
@@ -163,6 +163,23 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="content">
+            <form>
+                <p form-footer-title>Хотите узнать больше?<br>Подпишитесь на обновления</p>
+                <label>
+                    Электронная почта
+                    <div input-button>
+                        <input type="email" placeholder="Ваша электронная почта">
+                        <button arrow></button>
+                    </div>
+                    <p agreement>Подписываясь, вы принимаете <a href="https://ru.hexlet.io/pages/tos">правила сервиса</a></p>
+                </label>
+            </form>
+            <p>© 2021 Иван Федоров</p>
+            <p>По материалам статьи <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b" class="footer-a">Yash Ranadive Cognitive Biases in Programming</a></p>
+            <a href="https://ru.hexlet.io/" class="footer-a">Курсы программирования Hexlet</a>
+        </div>
+    </footer>
 </body>
 </html>
