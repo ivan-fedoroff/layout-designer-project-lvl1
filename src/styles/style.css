@@ -103,7 +103,7 @@ h5 {
   text-transform: uppercase;
 }
 
-[main-picture] {
+header img {
   position: absolute;
   top: 55px;
   right: -270px;
@@ -111,45 +111,45 @@ h5 {
   height: 525px;
 }
 
-.articles {
+.text-in-column {
   column-count: 2;
   column-gap: 30px;
 }
 
-header .articles {
+header .text-in-column {
   margin-top: 185px;
   margin-bottom: 30px;
 }
 
-.articles * {
+.text-in-column * {
   margin-top: 0;
 
   break-inside: avoid;
 }
 
+#detail {
+  position: relative;
+
+  left: 570px;
+}
+
 button {
+  border: none;
+
   background: #fe8a02;
+}
+
+a > button {
+  padding: 12px 24px;
+
+  color: #fff;
+  font: 16px/1.6em 'Open Sans Bold', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 button:hover {
   background: #ea7600;
-}
-
-[detail] {
-  position: relative;
-  left: 570px;
-
-  padding: 12px 24px;
-
-  border: none;
-
-  font: 16px/1.6em 'Open Sans Bold', sans-serif;
-}
-
-[detail] a {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 .s-video {
@@ -158,10 +158,17 @@ button:hover {
   text-align: center;
 }
 
-[before-video] {
+.s-video > h2,
+.s-video > p {
   margin-bottom: 30px;
+}
 
+.s-video > h2 {
   color: #2a2626;
+}
+
+.s-video > p {
+  color: #212529;
 }
 
 .video {
@@ -189,7 +196,7 @@ button:hover {
   font-size: 52px;
 }
 
-.articles *:first-of-type {
+.text-in-column *:first-of-type {
   break-after: column;
 }
 
@@ -222,13 +229,10 @@ button:hover {
 }
 
 .card:hover {
-  color: #fff;
-
   background: #fe8a02;
 }
 
-.card:hover .number,
-.card:hover h3 {
+.card:hover * {
   color: #fff;
 }
 
@@ -316,18 +320,17 @@ form {
   background: #42413c;
 }
 
-[form-footer-title] {
-  font: 34px/1.2 'Neucha', sans-serif;
+form > h3 {
+  margin: 1em 0;
+
+  color: #fff;
 }
 
 label {
-  box-sizing: border-box;
-  margin: 15px;
-
   font-size: 18px;
 }
 
-[input-button] {
+#input-button {
   display: flex;
 
   margin-top: 9px;
@@ -351,16 +354,15 @@ input::placeholder {
   opacity: 20%;
 }
 
-[arrow] {
+#input-button > button {
   position: relative;
 
   width: 70px;
   height: 50px;
   margin-left: 0;
-  border: none;
 }
 
-[arrow]::before {
+#input-button > button::before {
   position: absolute;
   top: 13px;
   left: 23px;
@@ -375,13 +377,13 @@ input::placeholder {
   content: '';
 }
 
-[agreement] {
+#agreement {
   margin: 0;
 
   font-size: 12px;
 }
 
-[agreement] > a {
+#agreement > a {
   color: #fff;
 }
 
