@@ -159,13 +159,14 @@ button:hover {
 }
 
 .s-video > h2 {
-  margin-top: 13px;
-  margin-bottom: 13px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 
   color: #2a2626;
 }
 
 .s-video > p {
+  margin-top: 25px;
   margin-bottom: 30px;
 
   color: #212529;
