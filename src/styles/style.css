@@ -153,7 +153,7 @@ button:hover {
 }
 
 .s-video {
-  height: 599px;
+  height: 615px;
 
   text-align: center;
 }
@@ -321,7 +321,7 @@ form {
 }
 
 form > h3 {
-  margin: 1em 0;
+  margin: 1.6em 0;
 
   color: #fff;
 }
